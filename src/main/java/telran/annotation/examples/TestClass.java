@@ -12,7 +12,7 @@ public class TestClass {
 		System.out.println("test f1 failed: ");
 	}
 
-	@Test
+	@Test(nRuns = 2)
 	void test1() {
 		f1(10);
 	}

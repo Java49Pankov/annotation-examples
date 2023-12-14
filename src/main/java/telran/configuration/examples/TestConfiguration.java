@@ -17,9 +17,6 @@ public class TestConfiguration {
 	@Value("app.string:abcd")
 	String s;
 
-	@Override
-	public String toString() {
-		return "TestConfiguration [i=" + i + ", l=" + l + ", f=" + f + ", d=" + d + ", s=" + s + "]";
-	}
+	
 
 }

@@ -1,17 +1,20 @@
 package telran.configuration.examples;
 
+import lombok.Data;
 import telran.configuration.annotation.Value;
 
+@Data
+
 public class TestConfiguration {
-	@Value("10")
+	@Value("app.int:10")
 	int i;
-	@Value("1000000000")
+	@Value("app.long:1000000")
 	long l;
-	@Value("0.5")
+	@Value("app.float:0.5")
 	float f;
-	@Value("10.5")
+	@Value("app.double:10.5")
 	double d;
-	@Value("ku-ku")
+	@Value("app.string:abcd")
 	String s;
 
 	@Override
